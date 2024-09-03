@@ -288,8 +288,10 @@
 
     <div class="container">
         <div class="carousel" id="carousel">
-            <img src="images/1.jpg" alt="Photo 1">
-            <img src="images/2.jpg" alt="Photo 2">
+            <img src="images/1.JPG" alt="Photo 1">
+            <img src="images/2.jpg" alt="Photo 3">
+            <img src="images/4.JPG" alt="Photo 4">
+           
         </div>
 
         <!-- Personal Info -->
@@ -302,9 +304,14 @@
         <div class="dropdown">
             <button>QR Codes</button>
             <div class="dropdown-content">
-                <button onclick="showPopup('images/dai_call.png')">&#x1F4F7; Call QR Code</button>
-                <button onclick="showPopup('images/dai_sms.png')">&#x1F4F7; SMS QR Code</button>
-                <button onclick="showPopup('images/dai_whatsapp.png')">&#x1F4F7; WhatsApp QR Code</button>
+                <button onclick="showPopup('images/dai_call.png')">&#x1F4F7; Phone</button>
+                <button onclick="showPopup('images/dai_sms.png')">&#x1F4F7; SMS</button>
+                <button onclick="showPopup('images/dai_whatsapp.png')">&#x1F4F7; WhatsApp</button>
+                <button onclick="showPopup('images/dai_insta.png')">&#x1F4F7; Instagram</button>
+<button onclick="showPopup('images/dai_facebook.png')">&#x1F4F7; Facebook</button>
+<button onclick="showPopup('images/jalpa_fb.png')">&#x1F4F7; Business Facebook</button>
+<button onclick="showPopup('images/dai_vcard.png')">&#x1F4F7; VCard</button>
+
             </div>
         </div>
 
@@ -319,8 +326,25 @@
             <!-- WhatsApp Button -->
             <button onclick="sendWhatsApp()">&#x1F4AC; WhatsApp Message</button>
 
-            <!-- Email Button 
-            <button onclick="sendEmail()">&#x2709; Send Email</button>-->
+            <!-- Email Button -->
+            <button onclick="sendEmail()">&#x2709; Send me an Email</button>
+
+            <!-- Instagram Button -->
+            <button onclick="window.open('https://www.instagram.com/dilajaishi/', '_blank')">&#x1F4F7; Add me on Instagram</button>
+
+            <!-- Facebook Button -->
+            <button onclick="window.open('https://www.facebook.com/dila.jaishi.1', '_blank')">&#x1F4F7; Friend me on Facebook</button>
+
+            <!-- Business Facebook Page Button -->
+            <button onclick="window.open('https://www.facebook.com/people/Janaki-Concern-Jalapa-Trade-Concern/100037625116776/', '_blank')">&#x1F4F7; Business Facebook Page</button>
+            <!-- Download vCard Button -->
+    <button onclick="downloadVCard()">&#x1F4C1; Save my number</button>
+
+<script>
+    function downloadVCard() {
+        window.location.href = 'contact.vcf';
+    }
+</script>
         </div>
     </div>
 
@@ -415,8 +439,9 @@
 
         // Send Email Function
         function sendEmail() {
-            window.location.href = "mailto:dilaramjaishi@example.com";
-        }
+    window.location.href = "mailto:jaishidr@gmail.com";
+}
+
 
         // Send Email to Developer
         function sendDeveloperEmail() {
